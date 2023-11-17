@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <h1>Spēlējam desas</h1>
+    <p>Spēlātaja <span class="display-p cross"></span> gājiens</p>
+    <div class="score-box">
+        <div id="circle-score">O punkti: <span></span></div>
+        <div class="fa-solid fa-arrows-rotate reset-score-btn ingame"></div>
+        <div id="cross-score">X punkti: <span></span></div>
+    </div>
+    <div class="board">
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+    </div>
+    <div class="result" id="result-box">
+        <div class="result-info">result-info</div>
+
+        <div class="result-score-box">
+            <div id="result-circle-score">O punkti: <span></span></div>
+            <div id="result-cross-score">X punkti: <span></span></div>
+            <div class="fa-solid fa-arrows-rotate reset-score-btn"></div>
+        </div>
+
+        <button class="restart-btn">Sākt no jauna</button>
+    </div>
+</body>
+</html>
