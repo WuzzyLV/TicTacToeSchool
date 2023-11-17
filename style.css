@@ -47,6 +47,11 @@ p {
     transition: none;
 }
 
+.cell:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+}
+
 .circle::before {
     content: "O";
 

@@ -150,3 +150,4 @@ function resetScore() {
     crossScore = 0;
     updateScore(null, true);
 }
+
