@@ -22,10 +22,12 @@ let circlePlayer;
 let circleScore = localStorage.getItem("circleScore") ? localStorage.getItem("circleScore") : 0;
 let crossScore = localStorage.getItem("crossScore") ? localStorage.getItem("crossScore") : 0;
 let denyInput = false;
+let winningCells = [];
 
 function startGame() {
     circlePlayer = false;
     denyInput = false;
+    winningCells = [];
     cells.forEach(cell => { 
         cell.classList.remove(classX);
         cell.classList.remove(classO);
@@ -64,7 +66,6 @@ function changePlayer() {
     document.querySelector("body").style.backgroundColor = circlePlayer ? "#1a252c" : "#1c2c1a";
 }
 
-let winningCells = [];
 function checkWin(activePlayer) {
     winConditions.forEach(combination => {
         const isWinningCombo = combination.every(index => {
