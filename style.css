@@ -82,6 +82,7 @@ p {
     align-items: center;
     color: white;
     font-size: 3rem;
+    text-align: center;
     flex-direction: column;
 }
 
